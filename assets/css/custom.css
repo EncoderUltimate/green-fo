@@ -180,6 +180,11 @@ a:hover {
 	-webkit-box-shadow: none;
 	box-shadow: none;
 }
+.wrap-input select option {
+    margin: 40px;
+    background: rgba(38,43,72,.92);
+    color: #fff;
+}
 .remember-row{
 	margin: 30px 0;
 }

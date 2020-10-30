@@ -59,8 +59,8 @@
 
                                                     @error('email')
                                                     <span class="invalid-feedback" role="alert">
-                                                                            <strong>{{ $message }}</strong>
-                                                                        </span>
+                                                        <strong>{{ $message }}</strong>
+                                                    </span>
                                                     @enderror
                                                 </div>
 
@@ -181,9 +181,24 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="form-group">
-                                                    <p class="term-policy text-muted small">Only Teachers can be registered.</p>
+                                                <div class="form-group wrap-input @error('role_id') is-invalid @enderror">
+                                                    <select name="role_id" class="form-control custom-select"
+                                                            id="inputGroupSelect01">
+                                                        <option selected>Select user type</option>
+                                                        <option value="2">Sign up as teacher</option>
+                                                        <option value="3">Sign up as student</option>
+                                                    </select>
+
+                                                    <span class="focus-input"></span>
+
+                                                    @if ($errors->has('role_id'))
+                                                        <span class="help-block">
+                                                            <strong>{{ $errors->first('role_id') }}</strong>
+                                                        </span>
+                                                    @endif
+
                                                 </div>
+
                                                 <div class="form-group">
                                                     <button class="btn btn-lg btn-primary btn-block"
                                                             type="submit">Sign up with email
