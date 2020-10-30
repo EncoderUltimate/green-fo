@@ -1,0 +1,298 @@
+@charset "UTF-8";
+/*------------------------------------------------------------------
+[Master Stylesheet]
+Project:	Admin Panel
+Created-by: Md. Abdul Kader
+Author: encoderultimate.com
+
+** Imports **
+** Reset **
+** Header Top **
+** Navbar-Search **
+** Vertical Navigation **
+** Dashboard-Page  **
+
+
+-------------------------------*/
+/****************************/
+/** Imports **/
+/****************************/
+@import url(plugin/bootstrap.min.css);
+@import url(font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700,900);
+
+a,
+a:focus {
+    text-decoration: none
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Titillium Web', sans-serif
+}
+
+.encoder-panel,
+.focus-input,
+.panel-forgot .form-control:focus+.focus-input:before,
+.panel-login .form-control:focus+.focus-input:before,
+.panel-signup .form-control:focus+.focus-input:before,
+.wrap-input {
+    width: 100%
+}
+
+body {
+    font-size: 1.6em;
+    font-weight: 400;
+    color: #44525f
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none
+}
+
+a:focus {
+    outline: 0
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #2d385e
+}
+
+a,
+a:focus,
+a:hover {
+    color: #4f77ff
+}
+
+.encoder-content {
+	margin-top: 97px;
+	margin-bottom: 97px;
+	background: rgba(38,43,72,.92);
+	color: #fff;
+	-webkit-box-shadow: 0 3px 6px #1d2030;
+	box-shadow: 0 3px 6px #1d2030;
+	padding: 33px;
+	padding: 40px 40px;
+}
+.brand-logo {
+	text-align: center;
+	left: 0;
+	right: 0;
+	margin: auto;
+	padding: 30px 0;
+}
+.brand-logo img {
+	background: #fff;
+	border-radius: 4px;
+}
+.nav-tabs .nav-item .nav-link {
+	color: #fff;
+	background-color: transparent;
+	font-size: 16px;
+	font-weight: 600;
+	letter-spacing: .25px;
+	text-transform: uppercase;
+	margin-bottom: -1px;
+	border-bottom: 2px solid #ddd !important;
+}
+.encoder-login .nav-tabs {
+	margin-bottom: 50px;
+	width: 100%;
+	border: 0;
+}
+
+.encoder-login .nav-tabs .nav-link {
+	border: 1px solid transparent;
+	border-top-left-radius: .25rem;
+	border-top-right-radius: .25rem;
+	border: 0px;
+}
+
+
+/* .encoder-login .nav-tabs > li.active > a,
+.encoder-login .nav-tabs > li > a:hover {
+	color: #4f77ff !important;
+	background: 0 0;
+	border-bottom: 2px solid #4f77ff;
+} */
+
+.encoder-login .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+	color: #4f77ff;
+	background-color: transparent;
+	font-size: 16px;
+	font-weight: 600;
+	letter-spacing: .25px;
+	text-transform: uppercase;
+	border-bottom: 2px solid #4f77ff !important;
+}
+.encoder-login .nav-tabs .nav-item .nav-link:focus,
+.nav-tabs .nav-link:hover {
+	color: #4f77ff;
+	border-bottom: 2px solid #4f77ff !important;
+}
+.wrap-input .form-control {
+	border-radius: 0px;
+	background: transparent;
+	border: transparent;
+}
+/* .form-group.wrap-input .pwdMask span {
+	position: absolute;
+	top: 60px;
+	text-align: right;
+	right: 28px;
+	color: #4f77ff;
+} */
+
+.wrap-input {
+    position: relative;
+    border-bottom: 2px solid
+    #d9d9d9;
+}
+.panel-login .pwdMask .pwd-toggle, .panel-signup .pwdMask .pwd-toggle {
+	top: 6px;
+	right: 15px;
+}
+
+.pwdMask .pwd-toggle {
+	color: #4f77ff;
+	position: absolute;
+	z-index: 2;
+}
+.panel-forgot .form-control, .panel-login .form-control, .panel-signup .form-control {
+	color: #fff;
+	font-size: 16px;
+	height: 50px;
+	padding: 12px 0;
+	outline: 0;
+	border: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.remember-row{
+	margin: 30px 0;
+}
+.remember-row .label-text {
+	font-size: 16px;
+	cursor: pointer;
+}
+#forget-lnk {
+	font-size: 16px;
+}
+/* textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+	box-shadow: none !important;
+	border-bottom: 2px solid red;
+} */
+.encoder-content p {
+	font-size: 14px;
+	text-align: center;
+}
+.row.social-buttons {
+	text-align: center;
+}
+.social-buttons .btn-black {
+	color: #fff;
+	width: 100%;
+	padding: 10px;
+	border-radius: 0;
+	margin-bottom: 15px;
+	box-shadow: none !important;
+	outline: none !important;
+	transition: all 0.4s ease;
+}
+.social-buttons .btn-black:hover {
+	opacity: .9;
+}
+.btn.btn-black.btn-facebook {
+	background: #3b5998;
+
+}
+.btn.btn-black.btn-twitter {
+	background: #00aced;
+
+}
+.btn.btn-black.btn-google {
+	background: #c32f10
+
+}
+.login-or {
+	margin: 40px 0;
+}
+
+.encoder-content .login-or::after, .encoder-content .login-or::before {
+	content: "";
+	width: 40px;
+	height: 1px;
+	position: absolute;
+	display: inline-block;
+	background: #a6a3a3;
+	margin-top: 11px;
+	margin-left: -47px;
+}
+.encoder-content .login-or::after {
+	margin-left: 8px;
+}
+
+.loginForm button {
+	outline: none !important;
+	border-radius: 0;
+}
+.remember-row .forgotPwd {
+	font-size: 16px;
+	width: 100%;
+	text-align: right;
+}
+.encoder-login {
+	width: 100%;
+	position: relative;
+}
+.signupForm button {
+	border-radius: 0;
+}
+.encoder-heading .auth-title {
+	color: #fff;
+}
+#forgot-pwd button {
+	border-radius: 0px;
+}
+.encoder-heading p {
+	text-align: left;
+}
+
+.wrap-input input[type="email"]:focus,
+.wrap-input input[type="password"]:focus{
+	border-color: rgba(79, 119, 255, 0.8);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(79, 119, 255, 0.6);
+	outline: 0 none;
+}
+
+
+
+.brand-logo img {
+	width: 70px;
+}
