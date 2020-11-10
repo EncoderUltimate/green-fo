@@ -3,14 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="f4cb99dd-198a-437b-9c1c-51d4d3141969" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -170,7 +169,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604072668581</updated>
-      <workItem from="1604072669648" duration="10782000" />
+      <workItem from="1604072669648" duration="11713000" />
+      <workItem from="1604165826988" duration="77000" />
+      <workItem from="1604165911252" duration="164000" />
+      <workItem from="1604166346912" duration="198000" />
     </task>
     <servers />
   </component>
@@ -182,5 +184,9 @@
       <screen x="0" y="27" width="1920" height="1011" />
     </state>
     <state x="693" y="290" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1920.1011/1920.0.1366.768@0.27.1920.1011" timestamp="1604078020825" />
+    <state x="738" y="279" width="424" height="521" key="FileChooserDialogImpl" timestamp="1604166539574">
+      <screen x="0" y="27" width="1920" height="1011" />
+    </state>
+    <state x="738" y="279" width="424" height="521" key="FileChooserDialogImpl/0.27.1920.1011/1920.233.1366.768@0.27.1920.1011" timestamp="1604166539574" />
   </component>
 </project>

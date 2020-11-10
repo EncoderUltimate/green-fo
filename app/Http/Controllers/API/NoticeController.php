@@ -14,7 +14,7 @@ class NoticeController extends Controller
      */
     public function index()
     {
-        //
+        return view('page.notice.view');
     }
 
     /**
