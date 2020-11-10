@@ -15,6 +15,15 @@ class CreateNoticesTable extends Migration
     {
         Schema::create('notices', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('user_id')->unsigned()->index();
+            $table->foreign('user_id')
+                ->references('id')
+                ->on('users')
+                ->onDelete('cascade');
+            $table->string('title');
+            $table->string('slug');
+            $table->string('image')->nullable();
+            $table->tinyInteger('status')->default(0);
             $table->timestamps();
         });
     }
